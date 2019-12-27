@@ -5,4 +5,5 @@ import org.springframework.data.repository.CrudRepository;
 
 public interface MoradorRepository extends CrudRepository<Morador, Long> {
 
+    Iterable<Morador> findByInadimplente(Boolean situacao);
 }

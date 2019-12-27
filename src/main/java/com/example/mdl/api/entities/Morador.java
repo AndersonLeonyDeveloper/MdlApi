@@ -1,5 +1,6 @@
 package com.example.mdl.api.entities;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.Data;
 import javax.persistence.*;
 import java.util.List;
@@ -15,18 +16,10 @@ public class Morador {
 
     private String nome;
 
-    private Boolean indadimplente;
+    private Boolean inadimplente;
 
     @ManyToOne
     @JoinColumn(name = "bloco_apto_id")
     private BlocoApto blocoApto;
-
-    @OneToMany
-    @JoinColumn(name = "morador_id")
-    private List<Carro> carros;
-
-    @OneToMany
-    @JoinColumn(name = "morador_id")
-    private List<Telefone> telefones;
 
 }

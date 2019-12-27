@@ -1,5 +1,8 @@
 package com.example.mdl.api.entities;
+
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.Data;
+
 import javax.persistence.*;
 
 @Entity
@@ -13,7 +16,8 @@ public class Telefone {
 
     private String tel;
 
-//    @ManyToOne
-//    private Morador morador;
+    @ManyToOne(cascade = CascadeType.REFRESH)
+    @JsonBackReference
+    private Morador morador;
 
 }
