@@ -21,7 +21,7 @@ public class MoradorController {
     private BlocoAptoService blocoAptoService;
 
     @GetMapping()
-    public Iterable<Morador> get() {
+    public Iterable<MoradorDTO> get() {
         return moradorService.getMoradores();
     }
 
@@ -51,8 +51,8 @@ public class MoradorController {
     }
 
     @PutMapping("/editarMorador/{id}")
-    public String put(@PathVariable("id") Long id, @RequestBody Morador morador) {
-        Morador m = moradorService.update(morador, id);
+    public String put(@PathVariable("id") Long moradorId, @RequestBody MoradorDTO moradorDTO) {
+        Morador m = moradorService.update(moradorDTO, moradorId);
 
         return "Morador editado com sucesso!";
     }

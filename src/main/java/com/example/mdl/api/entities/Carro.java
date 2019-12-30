@@ -3,12 +3,14 @@ package com.example.mdl.api.entities;
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.Data;
 import org.hibernate.annotations.Cascade;
+import org.hibernate.annotations.DynamicUpdate;
 
 import javax.persistence.*;
 
 @Entity
 @Table(name = "carro")
 @Data
+@DynamicUpdate
 public class Carro {
 
     @Id

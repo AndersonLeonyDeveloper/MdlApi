@@ -6,7 +6,6 @@ import com.example.mdl.api.entities.Telefone;
 import com.example.mdl.api.repositories.TelefoneRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.util.Assert;
 
 import java.util.List;
 import java.util.Optional;
@@ -17,60 +16,53 @@ public class TelefoneService {
     @Autowired
     private TelefoneRepository rep;
 
-    public List<Telefone> getListOfTelefonesByMoradorId(Long morador_id){
+    public List<Telefone> getListOfTelefonesByMoradorId(Long moradorId){
 
-        return rep.findByMoradorId(morador_id);
+        return rep.findByMoradorId(moradorId);
     }
 
-    public Telefone insert(Telefone telefone, Morador morador) {
-        Assert.notNull(telefone.getId(), "Não foi possível atualizar o registro.");
-
-        Telefone telefoneAdd = new Telefone();
-        telefoneAdd.setTel(telefone.getTel());
-        telefoneAdd.setMorador(morador);
-
-        return rep.save(telefone);
-    }
-
-    public Telefone update(Telefone telefone, Long id) {
-
-        System.out.println(id);
-        Assert.notNull(id, "Não foi possível atualizar o registro.");
-
-        Optional<Telefone> optional = getTelefoneById(id);
+    public Telefone insertOrUpdate(Telefone telefone, Morador morador){
+        Optional<Telefone> optional = getTelefoneByIdAndMoradorId(telefone.getId(), morador.getId());
 
         if(optional.isPresent()) {
             Telefone telefoneDb = optional.get();
 
             telefoneDb.setTel(telefone.getTel());
 
-            rep.save(telefoneDb);
-
-            return telefoneDb;
-
+            return rep.save(telefoneDb);
         } else {
-            throw new RuntimeException("Não foi possível atualizar o registro.");
-        }
+            Telefone telefoneAdd = new Telefone();
+            telefoneAdd.setTel(telefone.getTel());
+            telefoneAdd.setMorador(morador);
 
+            return rep.save(telefoneAdd);
+        }
+    }
+
+    public void insertOrUpdateList(List<Telefone> telefones, Morador morador) {
+        telefones.forEach(telefone -> {
+//            insert(telefone, morador);
+            insertOrUpdate(telefone, morador);
+        });
     }
 
     public Optional<Telefone> getTelefoneById(Long id) {
         return rep.findById(id);
     }
 
-    public Optional<Telefone> getTelefoneByIdAndMoradorId(Long id, Long morador_id) {
-        return rep.findByIdAndMoradorId(id, morador_id);
+    public Optional<Telefone> getTelefoneByIdAndMoradorId(Long id, Long moradorId) {
+        return rep.findByIdAndMoradorId(id, moradorId);
     }
 
-    public void updateList(List<Telefone> telefones) {
+    public void updateList(List<Telefone> telefones, Morador morador) {
         telefones.forEach(telefone -> {
-            update(telefone, telefone.getId());
+//            if(telefone.getId()!=null) {
+//                update(telefone, morador);
+//            } else {
+//                insert(telefone, morador);
+//            }
+            insertOrUpdate(telefone, morador);
         });
     }
 
-    public void insertList(List<Telefone> telefones, Morador morador) {
-        telefones.forEach(telefone -> {
-            insert(telefone, morador);
-        });
-    }
 }

@@ -2,33 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd99d7d9-9b96-43c5-9aa2-93948d4d16eb" name="Default Changelist" comment="Subindo projeto para o git">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/mdl/api/entities/MoradorDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/mdl/api/repositories/BlocoAptoRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/mdl/api/repositories/CarroRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/mdl/api/repositories/TelefoneRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/mdl/api/services/BlocoAptoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_10.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_6.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mdl.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mdl.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mdl/api/controllers/MoradorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mdl/api/controllers/MoradorController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mdl/api/entities/Carro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mdl/api/entities/Carro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mdl/api/entities/Morador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mdl/api/entities/Morador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mdl/api/entities/MoradorDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mdl/api/entities/MoradorDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mdl/api/entities/Telefone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mdl/api/entities/Telefone.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mdl/api/repositories/MoradorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mdl/api/repositories/MoradorRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mdl/api/services/CarroService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mdl/api/services/CarroService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mdl/api/services/MoradorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mdl/api/services/MoradorService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mdl/api/services/TelefoneService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mdl/api/services/TelefoneService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/mdl.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/mdl/api/controllers/MoradorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/mdl/api/controllers/MoradorController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/mdl/api/entities/Carro.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/mdl/api/entities/Carro.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/mdl/api/entities/Morador.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/mdl/api/entities/Morador.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/mdl/api/entities/Telefone.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/mdl/api/entities/Telefone.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/mdl/api/repositories/MoradorRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/mdl/api/repositories/MoradorRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/mdl/api/services/CarroService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/mdl/api/services/CarroService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/mdl/api/services/MoradorService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/mdl/api/services/MoradorService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/mdl/api/services/TelefoneService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/mdl/api/services/TelefoneService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,10 +116,10 @@
       <screen x="-1680" y="0" width="1680" height="1010" />
     </state>
     <state x="-1110" y="261" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/-1680.0.1680.1010/0.0.2560.1040@-1680.0.1680.1010" timestamp="1577383082358" />
-    <state x="-1035" y="222" key="#com.intellij.ide.util.MemberChooser" timestamp="1577375803706">
+    <state x="-669" y="228" key="#com.intellij.ide.util.MemberChooser" timestamp="1577704740672">
       <screen x="-1680" y="0" width="1680" height="1010" />
     </state>
-    <state x="-1035" y="222" key="#com.intellij.ide.util.MemberChooser/-1680.0.1680.1010/0.0.2560.1040@-1680.0.1680.1010" timestamp="1577375803706" />
+    <state x="-669" y="228" key="#com.intellij.ide.util.MemberChooser/-1680.0.1680.1010/0.0.2560.1040@-1680.0.1680.1010" timestamp="1577704740672" />
     <state x="-1018" y="431" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1577448057252">
       <screen x="-1680" y="0" width="1680" height="1010" />
     </state>
@@ -159,38 +141,38 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="615" y="441" key="FileChooserDialogImpl/-1680.0.1680.1010/0.0.2560.1040@0.0.2560.1040" timestamp="1577451610527" />
-    <state width="1637" height="255" key="GridCell.Tab.0.bottom" timestamp="1577476762557">
+    <state width="1637" height="2" key="GridCell.Tab.0.bottom" timestamp="1577713839943">
       <screen x="-1680" y="0" width="1680" height="1010" />
     </state>
-    <state width="1637" height="255" key="GridCell.Tab.0.bottom/-1680.0.1680.1010/0.0.2560.1040@-1680.0.1680.1010" timestamp="1577476762557" />
-    <state width="1637" height="255" key="GridCell.Tab.0.center" timestamp="1577476762557">
+    <state width="1637" height="2" key="GridCell.Tab.0.bottom/-1680.0.1680.1010/0.0.2560.1040@-1680.0.1680.1010" timestamp="1577713839943" />
+    <state width="1637" height="2" key="GridCell.Tab.0.center" timestamp="1577713839943">
       <screen x="-1680" y="0" width="1680" height="1010" />
     </state>
-    <state width="1637" height="255" key="GridCell.Tab.0.center/-1680.0.1680.1010/0.0.2560.1040@-1680.0.1680.1010" timestamp="1577476762557" />
-    <state width="1637" height="255" key="GridCell.Tab.0.left" timestamp="1577476762556">
+    <state width="1637" height="2" key="GridCell.Tab.0.center/-1680.0.1680.1010/0.0.2560.1040@-1680.0.1680.1010" timestamp="1577713839943" />
+    <state width="1637" height="2" key="GridCell.Tab.0.left" timestamp="1577713839943">
       <screen x="-1680" y="0" width="1680" height="1010" />
     </state>
-    <state width="1637" height="255" key="GridCell.Tab.0.left/-1680.0.1680.1010/0.0.2560.1040@-1680.0.1680.1010" timestamp="1577476762556" />
-    <state width="1637" height="255" key="GridCell.Tab.0.right" timestamp="1577476762557">
+    <state width="1637" height="2" key="GridCell.Tab.0.left/-1680.0.1680.1010/0.0.2560.1040@-1680.0.1680.1010" timestamp="1577713839943" />
+    <state width="1637" height="2" key="GridCell.Tab.0.right" timestamp="1577713839943">
       <screen x="-1680" y="0" width="1680" height="1010" />
     </state>
-    <state width="1637" height="255" key="GridCell.Tab.0.right/-1680.0.1680.1010/0.0.2560.1040@-1680.0.1680.1010" timestamp="1577476762557" />
-    <state width="1637" height="255" key="GridCell.Tab.1.bottom" timestamp="1577476831915">
+    <state width="1637" height="2" key="GridCell.Tab.0.right/-1680.0.1680.1010/0.0.2560.1040@-1680.0.1680.1010" timestamp="1577713839943" />
+    <state width="1637" height="2" key="GridCell.Tab.1.bottom" timestamp="1577713839833">
       <screen x="-1680" y="0" width="1680" height="1010" />
     </state>
-    <state width="1637" height="255" key="GridCell.Tab.1.bottom/-1680.0.1680.1010/0.0.2560.1040@-1680.0.1680.1010" timestamp="1577476831915" />
-    <state width="1637" height="255" key="GridCell.Tab.1.center" timestamp="1577476831915">
+    <state width="1637" height="2" key="GridCell.Tab.1.bottom/-1680.0.1680.1010/0.0.2560.1040@-1680.0.1680.1010" timestamp="1577713839833" />
+    <state width="1637" height="2" key="GridCell.Tab.1.center" timestamp="1577713839833">
       <screen x="-1680" y="0" width="1680" height="1010" />
     </state>
-    <state width="1637" height="255" key="GridCell.Tab.1.center/-1680.0.1680.1010/0.0.2560.1040@-1680.0.1680.1010" timestamp="1577476831915" />
-    <state width="1637" height="255" key="GridCell.Tab.1.left" timestamp="1577476831915">
+    <state width="1637" height="2" key="GridCell.Tab.1.center/-1680.0.1680.1010/0.0.2560.1040@-1680.0.1680.1010" timestamp="1577713839833" />
+    <state width="1637" height="2" key="GridCell.Tab.1.left" timestamp="1577713839832">
       <screen x="-1680" y="0" width="1680" height="1010" />
     </state>
-    <state width="1637" height="255" key="GridCell.Tab.1.left/-1680.0.1680.1010/0.0.2560.1040@-1680.0.1680.1010" timestamp="1577476831915" />
-    <state width="1637" height="255" key="GridCell.Tab.1.right" timestamp="1577476831915">
+    <state width="1637" height="2" key="GridCell.Tab.1.left/-1680.0.1680.1010/0.0.2560.1040@-1680.0.1680.1010" timestamp="1577713839832" />
+    <state width="1637" height="2" key="GridCell.Tab.1.right" timestamp="1577713839833">
       <screen x="-1680" y="0" width="1680" height="1010" />
     </state>
-    <state width="1637" height="255" key="GridCell.Tab.1.right/-1680.0.1680.1010/0.0.2560.1040@-1680.0.1680.1010" timestamp="1577476831915" />
+    <state width="1637" height="2" key="GridCell.Tab.1.right/-1680.0.1680.1010/0.0.2560.1040@-1680.0.1680.1010" timestamp="1577713839833" />
     <state x="-1434" y="127" width="1254" height="883" key="SettingsEditor" timestamp="1577456028178">
       <screen x="-1680" y="0" width="1680" height="1010" />
     </state>
@@ -200,10 +182,10 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="872" y="242" key="Vcs.Push.Dialog.v2/-1680.0.1680.1010/0.0.2560.1040@0.0.2560.1040" timestamp="1577452365943" />
-    <state x="-1036" y="335" key="com.intellij.ide.util.TipDialog" timestamp="1577456074194">
+    <state x="-1036" y="335" key="com.intellij.ide.util.TipDialog" timestamp="1577703800420">
       <screen x="-1680" y="0" width="1680" height="1010" />
     </state>
-    <state x="-1036" y="335" key="com.intellij.ide.util.TipDialog/-1680.0.1680.1010/0.0.2560.1040@-1680.0.1680.1010" timestamp="1577456074194" />
+    <state x="-1036" y="335" key="com.intellij.ide.util.TipDialog/-1680.0.1680.1010/0.0.2560.1040@-1680.0.1680.1010" timestamp="1577703800420" />
     <state x="981" y="345" key="com.intellij.ide.util.TipDialog/-1680.0.1680.1010/0.0.2560.1040@0.0.2560.1040" timestamp="1577372318358" />
     <state x="-1144" y="103" width="737" height="804" key="find.popup" timestamp="1577459954619">
       <screen x="-1680" y="0" width="1680" height="1010" />
@@ -218,11 +200,6 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/mdl/api/services/CarroService.java</url>
-          <line>37</line>
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/mdl/api/controllers/MoradorController.java</url>
           <line>47</line>
           <option name="timeStamp" value="42" />
@@ -234,23 +211,68 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/mdl/api/services/MoradorService.java</url>
-          <line>66</line>
+          <line>76</line>
           <option name="timeStamp" value="54" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/mdl/api/services/MoradorService.java</url>
-          <line>69</line>
+          <line>79</line>
           <option name="timeStamp" value="55" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/mdl/api/services/MoradorService.java</url>
-          <line>70</line>
+          <line>80</line>
           <option name="timeStamp" value="56" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/mdl/api/services/MoradorService.java</url>
-          <line>72</line>
+          <line>84</line>
           <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/mdl/api/services/MoradorService.java</url>
+          <line>89</line>
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/mdl/api/services/TelefoneService.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="78" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/mdl/api/services/TelefoneService.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="79" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/mdl/api/services/TelefoneService.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="80" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/mdl/api/services/TelefoneService.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="81" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/mdl/api/services/TelefoneService.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="82" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/mdl/api/services/TelefoneService.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="83" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/mdl/api/services/TelefoneService.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="84" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/mdl/api/services/TelefoneService.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="85" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

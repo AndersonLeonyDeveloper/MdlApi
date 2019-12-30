@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.Assert;
 
-import javax.swing.text.html.Option;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -29,17 +29,17 @@ public class MoradorService {
         Assert.notNull(id, "Não foi possível buscar o registro.");
 
         Optional<Morador> optional = rep.findById(id);
-        List<Carro> carros = carroService.getListOfCarsByMoradorId(id);
+        List<Carro> carros = carroService.getListOfCarrosByMoradorId(id);
         List<Telefone> telefones = telefoneService.getListOfTelefonesByMoradorId(id);
 
         MoradorDTO moradorDTO = new MoradorDTO();
 
-        if(optional.isPresent()){
+        if (optional.isPresent()) {
             moradorDTO.setId(optional.get().getId());
             moradorDTO.setNome(optional.get().getNome());
             moradorDTO.setInadimplente(optional.get().getInadimplente());
             moradorDTO.setBlocoApto(optional.get().getBlocoApto());
-            moradorDTO.setCarros(carroService.getListOfCarsByMoradorId(id));
+            moradorDTO.setCarros(carroService.getListOfCarrosByMoradorId(id));
             moradorDTO.setTelefones(telefoneService.getListOfTelefonesByMoradorId(id));
 
         } else {
@@ -49,8 +49,18 @@ public class MoradorService {
         return moradorDTO;
     }
 
-    public Iterable<Morador> getMoradores() {
-        return rep.findAll();
+    public Iterable<MoradorDTO> getMoradores() {
+        List<MoradorDTO> moradorDTOList = new ArrayList<>();
+        rep.findAll().forEach(morador -> {
+            moradorDTOList.add(
+                    new MoradorDTO(
+                            morador,
+                            carroService.getListOfCarrosByMoradorId(morador.getId()),
+                            telefoneService.getListOfTelefonesByMoradorId(morador.getId())
+                    )
+            );
+        });
+        return moradorDTOList;
     }
 
     public Iterable<Morador> getMoradorBySituacao(Boolean situacao) {
@@ -58,7 +68,7 @@ public class MoradorService {
     }
 
     public MoradorDTO insert(MoradorDTO moradorDTO) {
-        Assert.isNull(moradorDTO.getId(), "Não foi possível atualizar o registro.");
+        Assert.isNull(moradorDTO.getId(), "Não foi possível adicionar o registro (id deve ser nulo nulo).");
 
         BlocoApto blocoAptoAdd = blocoAptoService.getBlocoApto(moradorDTO.getBlocoApto().getBloco(), moradorDTO.getBlocoApto().getApto());
 
@@ -69,35 +79,39 @@ public class MoradorService {
         moradorAdd.setInadimplente(moradorDTO.getInadimplente());
         moradorAdd.setBlocoApto(blocoAptoAdd);
         moradorAdd.setId(rep.save(moradorAdd).getId());
+        carroService.insertOrUpdateList(moradorDTO.getCarros(), moradorAdd);
+        telefoneService.insertOrUpdateList(moradorDTO.getTelefones(), moradorAdd);
 
-        if(!moradorDTO.getCarros().isEmpty()){
-            carroService.insertList(moradorDTO.getCarros(), moradorAdd);
-        }
-
-        if(!moradorDTO.getTelefones().isEmpty()){
-            telefoneService.insertList(moradorDTO.getTelefones(), moradorAdd);
-        }
+//        if (!moradorDTO.getCarros().isEmpty()) {
+//            carroService.insertList(moradorDTO.getCarros(), moradorAdd);
+//        }
+//
+//        if (!moradorDTO.getTelefones().isEmpty()) {
+//            telefoneService.insertList(moradorDTO.getTelefones(), moradorAdd);
+//        }
 
         return moradorDTO;
     }
 
-    public Morador update(Morador morador, Long id) {
-        System.out.println(id);
-        Assert.notNull(id, "Não foi possível atualizar o registro.");
+    public Morador update(MoradorDTO moradorDTO, Long moradorId) {
+        System.out.println(moradorId);
+        Assert.notNull(moradorId, "Não foi possível atualizar o registro (id do morador não pode ser nulo).");
 
         // Busca o morador no BD
-        Optional<Morador> optional = rep.findById(id);
+        Optional<Morador> optional = rep.findById(moradorId);
 
         if (optional.isPresent()) {
             Morador moradorDb = optional.get();
             // Copiar as propriedades que estão vindo do JSON
-            moradorDb.setNome(morador.getNome());
-            moradorDb.setBlocoApto(morador.getBlocoApto());
-            moradorDb.setInadimplente(morador.getInadimplente());
+            moradorDb.setNome(moradorDTO.getNome());
+            moradorDb.setBlocoApto(moradorDTO.getBlocoApto());
+            moradorDb.setInadimplente(moradorDTO.getInadimplente());
+            carroService.insertOrUpdateList(moradorDTO.getCarros(), moradorDb);
+            telefoneService.insertOrUpdateList(moradorDTO.getTelefones(), moradorDb);
 
-            List<Carro> carrosDb = carroService.getListOfCarsByMoradorId(id);
+//            List<Carro> carrosDb = carroService.getListOfCarrosByMoradorId(id);
 //            if(!carrosDb.isEmpty()){
-//                carroService.updateList(morador.getCarros());
+//                carroService.updateList(carrosDb, id);
 //            }
 //
 //            List<Telefone> telefonesDb = telefoneService.getListOfTelefonesByMoradorId(id);
@@ -107,8 +121,6 @@ public class MoradorService {
 
 //            moradorDb.setCarros(morador.getCarros());
 //            moradorDb.setTelefones(morador.getTelefones());
-
-            System.out.println("Morador id = " + moradorDb.getId());
 
             //Atualiza o morador;
             rep.save(moradorDb);

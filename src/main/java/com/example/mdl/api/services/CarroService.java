@@ -16,59 +16,39 @@ public class CarroService {
     @Autowired
     private CarroRepository rep;
 
-    public List<Carro> getListOfCarsByMoradorId(Long morador_id){
+    public List<Carro> getListOfCarrosByMoradorId(Long morador_id){
 
         return rep.findByMoradorId(morador_id);
     }
 
-    public Carro insert(Carro carro, Morador morador) {
-        Assert.notNull(carro.getId(), "Não foi possível salvar o registro.");
-
-        Carro carroAdd = new Carro();
-        carroAdd.setPlaca(carro.getPlaca());
-        carroAdd.setCor(carro.getCor());
-        carroAdd.setModelo(carro.getModelo());
-        carroAdd.setMorador(morador);
-
-        return rep.save(carroAdd);
-    }
-
-    public void insertList(List<Carro> carros, Morador morador) {
-        carros.forEach(carro -> {
-            insert(carro, morador);
-        });
-
-    }
-
-    public void updateList(List<Carro> carros) {
-        carros.forEach(carro -> {
-           update(carro, carro.getId());
-        });
-
-    }
-
-    public Carro update(Carro carro, Long id) {
-
-        System.out.println(id);
-        Assert.notNull(id, "Não foi possível atualizar o registro.");
-
-        Optional<Carro> optional = getCarroById(id);
+    public Carro insertOrUpdate(Carro carro, Morador morador){
+        Optional<Carro> optional = getCarroByIdAndMoradorId(carro.getId(), morador.getId());
 
         if(optional.isPresent()) {
-            Carro carroDb = optional.get();
+            Carro carroUpdate = optional.get();
 
-            carroDb.setModelo(carro.getModelo());
-            carroDb.setCor(carro.getCor());
-            carroDb.setPlaca(carro.getPlaca());
+            carroUpdate.setModelo(carro.getModelo());
+            carroUpdate.setCor(carro.getCor());
+            carroUpdate.setPlaca(carro.getPlaca());
 
-            rep.save(carroDb);
-
-            return carroDb;
+            return rep.save(carroUpdate);
 
         } else {
-            throw new RuntimeException("Não foi possível atualizar o registro.");
-        }
 
+            Carro carroInsert = new Carro();
+            carroInsert.setPlaca(carro.getPlaca());
+            carroInsert.setCor(carro.getCor());
+            carroInsert.setModelo(carro.getModelo());
+            carroInsert.setMorador(morador);
+
+            return rep.save(carroInsert);
+        }
+    }
+
+    public void insertOrUpdateList(List<Carro> carros, Morador morador) {
+        carros.forEach(carro -> {
+            insertOrUpdate(carro, morador);
+        });
     }
 
     public Optional<Carro> getCarroById(Long id) {
