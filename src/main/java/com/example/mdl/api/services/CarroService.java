@@ -1,12 +1,15 @@
 package com.example.mdl.api.services;
 
 import com.example.mdl.api.entities.Carro;
+import com.example.mdl.api.entities.CarroDTO;
 import com.example.mdl.api.entities.Morador;
+import com.example.mdl.api.entities.MoradorDTO;
 import com.example.mdl.api.repositories.CarroRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.Assert;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -16,12 +19,17 @@ public class CarroService {
     @Autowired
     private CarroRepository rep;
 
-    public List<Carro> getListOfCarrosByMoradorId(Long morador_id){
+    public List<CarroDTO> getListOfCarrosByMoradorId(Long morador_id){
+        List<CarroDTO> carrosDTOlist = new ArrayList<>();
 
-        return rep.findByMoradorId(morador_id);
+        rep.findByMoradorId(morador_id).forEach(carro -> {
+            carrosDTOlist.add(new CarroDTO(carro));
+        });
+
+        return carrosDTOlist;
     }
 
-    public Carro insertOrUpdate(Carro carro, Morador morador){
+    public Carro insertOrUpdate(CarroDTO carro, Morador morador){
         Optional<Carro> optional = getCarroByIdAndMoradorId(carro.getId(), morador.getId());
 
         if(optional.isPresent()) {
@@ -45,10 +53,18 @@ public class CarroService {
         }
     }
 
-    public void insertOrUpdateList(List<Carro> carros, Morador morador) {
+    public void insertOrUpdateList(List<CarroDTO> carros, Morador morador) {
+
+        List<Carro> carrosListUpdate = new ArrayList<>();
+
         carros.forEach(carro -> {
-            insertOrUpdate(carro, morador);
+            carrosListUpdate.add(new Carro(carro.getId(), carro.getPlaca(), carro.getModelo(), carro.getCor(), morador));
         });
+        rep.deleteAll();
+        rep.saveAll(carrosListUpdate);
+//        carros.forEach(carro -> {
+//            insertOrUpdate(carro, morador);
+//        });
     }
 
     public Optional<Carro> getCarroById(Long id) {
@@ -57,6 +73,10 @@ public class CarroService {
 
     public Optional<Carro> getCarroByIdAndMoradorId(Long id, Long morador_id) {
         return rep.findByIdAndMoradorId(id, morador_id);
+    }
+
+    public void deleteAllCars(){
+        rep.deleteAll();
     }
 
 }

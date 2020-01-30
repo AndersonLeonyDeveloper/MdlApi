@@ -1,8 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bd99d7d9-9b96-43c5-9aa2-93948d4d16eb" name="Default Changelist" comment="Subindo projeto para o git">
+    <list default="true" id="bd99d7d9-9b96-43c5-9aa2-93948d4d16eb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/mdl/api/entities/CarroDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/mdl/api/entities/TelefoneDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mdl/api/entities/Carro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mdl/api/entities/Carro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mdl/api/entities/MoradorDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mdl/api/entities/MoradorDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mdl/api/entities/Telefone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mdl/api/entities/Telefone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mdl/api/services/CarroService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mdl/api/services/CarroService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mdl/api/services/MoradorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mdl/api/services/MoradorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mdl/api/services/TelefoneService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mdl/api/services/TelefoneService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/mdl/api/entities/Carro.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/mdl/api/entities/Carro.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/mdl/api/entities/MoradorDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/mdl/api/entities/MoradorDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/mdl/api/entities/Telefone.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/mdl/api/entities/Telefone.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/mdl/api/repositories/MoradorRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/mdl/api/repositories/MoradorRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/mdl/api/services/CarroService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/mdl/api/services/CarroService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/mdl/api/services/MoradorService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/mdl/api/services/MoradorService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/mdl/api/services/TelefoneService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/mdl/api/services/TelefoneService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +111,21 @@
       <option name="project" value="LOCAL" />
       <updated>1577452233769</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Subindo projeto para o git">
+      <created>1577736622764</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1577736622764</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Subindo projeto para o git">
+      <created>1577736643423</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1577736643423</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -108,10 +137,10 @@
       <screen x="-1680" y="0" width="1680" height="1010" />
     </state>
     <state x="-1110" y="261" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/-1680.0.1680.1010/0.0.2560.1040@-1680.0.1680.1010" timestamp="1577383082358" />
-    <state x="-669" y="228" key="#com.intellij.ide.util.MemberChooser" timestamp="1577704740672">
+    <state x="-669" y="228" key="#com.intellij.ide.util.MemberChooser" timestamp="1580410682929">
       <screen x="-1680" y="0" width="1680" height="1010" />
     </state>
-    <state x="-669" y="228" key="#com.intellij.ide.util.MemberChooser/-1680.0.1680.1010/0.0.2560.1040@-1680.0.1680.1010" timestamp="1577704740672" />
+    <state x="-669" y="228" key="#com.intellij.ide.util.MemberChooser/-1680.0.1680.1010/0.0.2560.1040@-1680.0.1680.1010" timestamp="1580410682929" />
     <state x="-1018" y="431" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1577448057252">
       <screen x="-1680" y="0" width="1680" height="1010" />
     </state>
@@ -120,10 +149,10 @@
       <screen x="-1680" y="0" width="1680" height="1010" />
     </state>
     <state x="-1044" y="365" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/-1680.0.1680.1010/0.0.2560.1040@-1680.0.1680.1010" timestamp="1577383108576" />
-    <state x="-1126" y="111" key="CommitChangelistDialog2" timestamp="1577736622167">
+    <state x="-1126" y="111" key="CommitChangelistDialog2" timestamp="1577736642858">
       <screen x="-1680" y="0" width="1680" height="1010" />
     </state>
-    <state x="-1126" y="111" key="CommitChangelistDialog2/-1680.0.1680.1010/0.0.2560.1040@-1680.0.1680.1010" timestamp="1577736622167" />
+    <state x="-1126" y="111" key="CommitChangelistDialog2/-1680.0.1680.1010/0.0.2560.1040@-1680.0.1680.1010" timestamp="1577736642858" />
     <state x="844" y="114" key="CommitChangelistDialog2/-1680.0.1680.1010/0.0.2560.1040@0.0.2560.1040" timestamp="1577452232962" />
     <state x="-1310" y="161" key="DBNavigator.ProjectSettingsDialog" timestamp="1577390122064">
       <screen x="-1680" y="0" width="1680" height="1010" />
@@ -133,22 +162,22 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="615" y="441" key="FileChooserDialogImpl/-1680.0.1680.1010/0.0.2560.1040@0.0.2560.1040" timestamp="1577451610527" />
-    <state width="1637" height="489" key="GridCell.Tab.0.bottom" timestamp="1577716388531">
+    <state width="1637" height="263" key="GridCell.Tab.0.bottom" timestamp="1580412355955">
       <screen x="-1680" y="0" width="1680" height="1010" />
     </state>
-    <state width="1637" height="489" key="GridCell.Tab.0.bottom/-1680.0.1680.1010/0.0.2560.1040@-1680.0.1680.1010" timestamp="1577716388531" />
-    <state width="1637" height="489" key="GridCell.Tab.0.center" timestamp="1577716388531">
+    <state width="1637" height="263" key="GridCell.Tab.0.bottom/-1680.0.1680.1010/0.0.2560.1040@-1680.0.1680.1010" timestamp="1580412355955" />
+    <state width="1637" height="263" key="GridCell.Tab.0.center" timestamp="1580412355955">
       <screen x="-1680" y="0" width="1680" height="1010" />
     </state>
-    <state width="1637" height="489" key="GridCell.Tab.0.center/-1680.0.1680.1010/0.0.2560.1040@-1680.0.1680.1010" timestamp="1577716388531" />
-    <state width="1637" height="489" key="GridCell.Tab.0.left" timestamp="1577716388531">
+    <state width="1637" height="263" key="GridCell.Tab.0.center/-1680.0.1680.1010/0.0.2560.1040@-1680.0.1680.1010" timestamp="1580412355955" />
+    <state width="1637" height="263" key="GridCell.Tab.0.left" timestamp="1580412355954">
       <screen x="-1680" y="0" width="1680" height="1010" />
     </state>
-    <state width="1637" height="489" key="GridCell.Tab.0.left/-1680.0.1680.1010/0.0.2560.1040@-1680.0.1680.1010" timestamp="1577716388531" />
-    <state width="1637" height="489" key="GridCell.Tab.0.right" timestamp="1577716388531">
+    <state width="1637" height="263" key="GridCell.Tab.0.left/-1680.0.1680.1010/0.0.2560.1040@-1680.0.1680.1010" timestamp="1580412355954" />
+    <state width="1637" height="263" key="GridCell.Tab.0.right" timestamp="1580412355955">
       <screen x="-1680" y="0" width="1680" height="1010" />
     </state>
-    <state width="1637" height="489" key="GridCell.Tab.0.right/-1680.0.1680.1010/0.0.2560.1040@-1680.0.1680.1010" timestamp="1577716388531" />
+    <state width="1637" height="263" key="GridCell.Tab.0.right/-1680.0.1680.1010/0.0.2560.1040@-1680.0.1680.1010" timestamp="1580412355955" />
     <state width="1637" height="489" key="GridCell.Tab.1.bottom" timestamp="1577716388532">
       <screen x="-1680" y="0" width="1680" height="1010" />
     </state>
@@ -170,15 +199,15 @@
     </state>
     <state x="-1434" y="127" width="1254" height="883" key="SettingsEditor/-1680.0.1680.1010/0.0.2560.1040@-1680.0.1680.1010" timestamp="1577456028178" />
     <state x="336" y="330" width="998" height="710" key="SettingsEditor/-1680.0.1680.1010/0.0.2560.1040@0.0.2560.1040" timestamp="1577451880115" />
-    <state x="-1108" y="235" key="Vcs.Push.Dialog.v2" timestamp="1577736626683">
+    <state x="-1108" y="235" key="Vcs.Push.Dialog.v2" timestamp="1577736657909">
       <screen x="-1680" y="0" width="1680" height="1010" />
     </state>
-    <state x="-1108" y="235" key="Vcs.Push.Dialog.v2/-1680.0.1680.1010/0.0.2560.1040@-1680.0.1680.1010" timestamp="1577736626683" />
+    <state x="-1108" y="235" key="Vcs.Push.Dialog.v2/-1680.0.1680.1010/0.0.2560.1040@-1680.0.1680.1010" timestamp="1577736657909" />
     <state x="872" y="242" key="Vcs.Push.Dialog.v2/-1680.0.1680.1010/0.0.2560.1040@0.0.2560.1040" timestamp="1577452365943" />
-    <state x="-1036" y="335" key="com.intellij.ide.util.TipDialog" timestamp="1577736420522">
+    <state x="-1036" y="335" key="com.intellij.ide.util.TipDialog" timestamp="1580406458142">
       <screen x="-1680" y="0" width="1680" height="1010" />
     </state>
-    <state x="-1036" y="335" key="com.intellij.ide.util.TipDialog/-1680.0.1680.1010/0.0.2560.1040@-1680.0.1680.1010" timestamp="1577736420522" />
+    <state x="-1036" y="335" key="com.intellij.ide.util.TipDialog/-1680.0.1680.1010/0.0.2560.1040@-1680.0.1680.1010" timestamp="1580406458142" />
     <state x="981" y="345" key="com.intellij.ide.util.TipDialog/-1680.0.1680.1010/0.0.2560.1040@0.0.2560.1040" timestamp="1577372318358" />
     <state x="-1144" y="103" width="737" height="804" key="find.popup" timestamp="1577459954619">
       <screen x="-1680" y="0" width="1680" height="1010" />
@@ -226,46 +255,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/example/mdl/api/services/MoradorService.java</url>
           <line>89</line>
           <option name="timeStamp" value="75" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/mdl/api/services/TelefoneService.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="78" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/mdl/api/services/TelefoneService.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="79" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/mdl/api/services/TelefoneService.java</url>
-          <line>29</line>
-          <option name="timeStamp" value="80" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/mdl/api/services/TelefoneService.java</url>
-          <line>31</line>
-          <option name="timeStamp" value="81" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/mdl/api/services/TelefoneService.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="82" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/mdl/api/services/TelefoneService.java</url>
-          <line>34</line>
-          <option name="timeStamp" value="83" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/mdl/api/services/TelefoneService.java</url>
-          <line>35</line>
-          <option name="timeStamp" value="84" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/mdl/api/services/TelefoneService.java</url>
-          <line>37</line>
-          <option name="timeStamp" value="85" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

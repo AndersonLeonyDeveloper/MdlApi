@@ -29,8 +29,8 @@ public class MoradorService {
         Assert.notNull(id, "Não foi possível buscar o registro.");
 
         Optional<Morador> optional = rep.findById(id);
-        List<Carro> carros = carroService.getListOfCarrosByMoradorId(id);
-        List<Telefone> telefones = telefoneService.getListOfTelefonesByMoradorId(id);
+//        List<Carro> carros = carroService.getListOfCarrosByMoradorId(id);
+//        List<Telefone> telefones = telefoneService.getListOfTelefonesByMoradorId(id);
 
         MoradorDTO moradorDTO = new MoradorDTO();
 
@@ -108,19 +108,6 @@ public class MoradorService {
             moradorDb.setInadimplente(moradorDTO.getInadimplente());
             carroService.insertOrUpdateList(moradorDTO.getCarros(), moradorDb);
             telefoneService.insertOrUpdateList(moradorDTO.getTelefones(), moradorDb);
-
-//            List<Carro> carrosDb = carroService.getListOfCarrosByMoradorId(id);
-//            if(!carrosDb.isEmpty()){
-//                carroService.updateList(carrosDb, id);
-//            }
-//
-//            List<Telefone> telefonesDb = telefoneService.getListOfTelefonesByMoradorId(id);
-//            if(!telefonesDb.isEmpty()){
-//                telefoneService.updateList(morador.getTelefones());
-//            }
-
-//            moradorDb.setCarros(morador.getCarros());
-//            moradorDb.setTelefones(morador.getTelefones());
 
             //Atualiza o morador;
             rep.save(moradorDb);

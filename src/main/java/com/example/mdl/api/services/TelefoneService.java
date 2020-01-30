@@ -1,12 +1,11 @@
 package com.example.mdl.api.services;
 
-import com.example.mdl.api.entities.Carro;
-import com.example.mdl.api.entities.Morador;
-import com.example.mdl.api.entities.Telefone;
+import com.example.mdl.api.entities.*;
 import com.example.mdl.api.repositories.TelefoneRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -16,12 +15,18 @@ public class TelefoneService {
     @Autowired
     private TelefoneRepository rep;
 
-    public List<Telefone> getListOfTelefonesByMoradorId(Long moradorId){
+    public List<TelefoneDTO> getListOfTelefonesByMoradorId(Long moradorId){
 
-        return rep.findByMoradorId(moradorId);
+        List<TelefoneDTO> telefonesDTOlist = new ArrayList<>();
+
+        rep.findByMoradorId(moradorId).forEach(telefone -> {
+            telefonesDTOlist.add(new TelefoneDTO(telefone));
+        });
+
+        return telefonesDTOlist;
     }
 
-    public Telefone insertOrUpdate(Telefone telefone, Morador morador){
+    public Telefone insertOrUpdate(TelefoneDTO telefone, Morador morador){
         Optional<Telefone> optional = getTelefoneByIdAndMoradorId(telefone.getId(), morador.getId());
 
         if(optional.isPresent()) {
@@ -39,11 +44,19 @@ public class TelefoneService {
         }
     }
 
-    public void insertOrUpdateList(List<Telefone> telefones, Morador morador) {
+    public void insertOrUpdateList(List<TelefoneDTO> telefones, Morador morador) {
+        List<Telefone> telefonesListUpdate = new ArrayList<>();
+
         telefones.forEach(telefone -> {
-//            insert(telefone, morador);
-            insertOrUpdate(telefone, morador);
+            telefonesListUpdate.add(new Telefone(telefone.getId(), telefone.getTel(), morador));
         });
+        rep.deleteAll();
+        rep.saveAll(telefonesListUpdate);
+
+//        telefones.forEach(telefone -> {
+////            insert(telefone, morador);
+//            insertOrUpdate(telefone, morador);
+//        });
     }
 
     public Optional<Telefone> getTelefoneById(Long id) {
@@ -54,7 +67,7 @@ public class TelefoneService {
         return rep.findByIdAndMoradorId(id, moradorId);
     }
 
-    public void updateList(List<Telefone> telefones, Morador morador) {
+    public void updateList(List<TelefoneDTO> telefones, Morador morador) {
         telefones.forEach(telefone -> {
 //            if(telefone.getId()!=null) {
 //                update(telefone, morador);

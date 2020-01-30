@@ -23,4 +23,12 @@ public class Telefone {
     @JsonBackReference
     private Morador morador;
 
+    public Telefone(Long id, String tel, Morador morador) {
+        this.id = id;
+        this.tel = tel;
+        this.morador = morador;
+    }
+
+    public Telefone() {
+    }
 }

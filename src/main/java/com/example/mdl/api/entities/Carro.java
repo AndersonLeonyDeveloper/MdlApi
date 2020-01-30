@@ -29,4 +29,14 @@ public class Carro {
     @JsonBackReference
     private Morador morador;
 
+    public Carro(Long id, String placa, String modelo, String cor, Morador morador) {
+        this.id = id;
+        this.placa = placa;
+        this.modelo = modelo;
+        this.cor = cor;
+        this.morador = morador;
+    }
+
+    public Carro() {
+    }
 }

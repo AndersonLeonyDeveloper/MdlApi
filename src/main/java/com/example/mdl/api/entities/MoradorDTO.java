@@ -16,11 +16,11 @@ public class MoradorDTO {
 
     private BlocoApto blocoApto;
 
-    private List<Carro> carros;
+    private List<CarroDTO> carros;
 
-    private List<Telefone> telefones;
+    private List<TelefoneDTO> telefones;
 
-    public MoradorDTO(Morador morador, List<Carro> carros, List<Telefone> telefones) {
+    public MoradorDTO(Morador morador, List<CarroDTO> carros, List<TelefoneDTO> telefones) {
         this.id = morador.getId();
         this.nome = morador.getNome();
         this.inadimplente = morador.getInadimplente();
