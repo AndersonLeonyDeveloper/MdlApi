@@ -1,5 +1,6 @@
 package com.example.mdl.api.services;
 
+import com.example.mdl.api.dto.TelefoneDTO;
 import com.example.mdl.api.entities.*;
 import com.example.mdl.api.repositories.TelefoneRepository;
 import org.springframework.beans.factory.annotation.Autowired;

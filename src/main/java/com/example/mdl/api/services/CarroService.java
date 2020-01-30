@@ -1,13 +1,11 @@
 package com.example.mdl.api.services;
 
 import com.example.mdl.api.entities.Carro;
-import com.example.mdl.api.entities.CarroDTO;
+import com.example.mdl.api.dto.CarroDTO;
 import com.example.mdl.api.entities.Morador;
-import com.example.mdl.api.entities.MoradorDTO;
 import com.example.mdl.api.repositories.CarroRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.util.Assert;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bd99d7d9-9b96-43c5-9aa2-93948d4d16eb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/mdl/api/entities/CarroDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/mdl/api/entities/TelefoneDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mdl/api/entities/Carro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mdl/api/entities/Carro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mdl/api/entities/MoradorDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mdl/api/entities/MoradorDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mdl/api/entities/Telefone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mdl/api/entities/Telefone.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mdl/api/services/CarroService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mdl/api/services/CarroService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mdl/api/services/MoradorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mdl/api/services/MoradorService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mdl/api/services/TelefoneService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mdl/api/services/TelefoneService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/mdl/api/entities/Carro.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/mdl/api/entities/Carro.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/mdl/api/entities/MoradorDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/mdl/api/entities/MoradorDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/mdl/api/entities/Telefone.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/mdl/api/entities/Telefone.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/mdl/api/repositories/MoradorRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/mdl/api/repositories/MoradorRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/mdl/api/services/CarroService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/mdl/api/services/CarroService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/mdl/api/services/MoradorService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/mdl/api/services/MoradorService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/mdl/api/services/TelefoneService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/mdl/api/services/TelefoneService.class" afterDir="false" />
-    </list>
+    <list default="true" id="bd99d7d9-9b96-43c5-9aa2-93948d4d16eb" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -162,22 +145,22 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="615" y="441" key="FileChooserDialogImpl/-1680.0.1680.1010/0.0.2560.1040@0.0.2560.1040" timestamp="1577451610527" />
-    <state width="1637" height="263" key="GridCell.Tab.0.bottom" timestamp="1580412355955">
+    <state width="1637" height="263" key="GridCell.Tab.0.bottom" timestamp="1580412900762">
       <screen x="-1680" y="0" width="1680" height="1010" />
     </state>
-    <state width="1637" height="263" key="GridCell.Tab.0.bottom/-1680.0.1680.1010/0.0.2560.1040@-1680.0.1680.1010" timestamp="1580412355955" />
-    <state width="1637" height="263" key="GridCell.Tab.0.center" timestamp="1580412355955">
+    <state width="1637" height="263" key="GridCell.Tab.0.bottom/-1680.0.1680.1010/0.0.2560.1040@-1680.0.1680.1010" timestamp="1580412900762" />
+    <state width="1637" height="263" key="GridCell.Tab.0.center" timestamp="1580412900762">
       <screen x="-1680" y="0" width="1680" height="1010" />
     </state>
-    <state width="1637" height="263" key="GridCell.Tab.0.center/-1680.0.1680.1010/0.0.2560.1040@-1680.0.1680.1010" timestamp="1580412355955" />
-    <state width="1637" height="263" key="GridCell.Tab.0.left" timestamp="1580412355954">
+    <state width="1637" height="263" key="GridCell.Tab.0.center/-1680.0.1680.1010/0.0.2560.1040@-1680.0.1680.1010" timestamp="1580412900762" />
+    <state width="1637" height="263" key="GridCell.Tab.0.left" timestamp="1580412900762">
       <screen x="-1680" y="0" width="1680" height="1010" />
     </state>
-    <state width="1637" height="263" key="GridCell.Tab.0.left/-1680.0.1680.1010/0.0.2560.1040@-1680.0.1680.1010" timestamp="1580412355954" />
-    <state width="1637" height="263" key="GridCell.Tab.0.right" timestamp="1580412355955">
+    <state width="1637" height="263" key="GridCell.Tab.0.left/-1680.0.1680.1010/0.0.2560.1040@-1680.0.1680.1010" timestamp="1580412900762" />
+    <state width="1637" height="263" key="GridCell.Tab.0.right" timestamp="1580412900762">
       <screen x="-1680" y="0" width="1680" height="1010" />
     </state>
-    <state width="1637" height="263" key="GridCell.Tab.0.right/-1680.0.1680.1010/0.0.2560.1040@-1680.0.1680.1010" timestamp="1580412355955" />
+    <state width="1637" height="263" key="GridCell.Tab.0.right/-1680.0.1680.1010/0.0.2560.1040@-1680.0.1680.1010" timestamp="1580412900762" />
     <state width="1637" height="489" key="GridCell.Tab.1.bottom" timestamp="1577716388532">
       <screen x="-1680" y="0" width="1680" height="1010" />
     </state>

@@ -1,5 +1,6 @@
-package com.example.mdl.api.entities;
+package com.example.mdl.api.dto;
 
+import com.example.mdl.api.entities.Telefone;
 import lombok.Data;
 
 @Data

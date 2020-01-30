@@ -1,14 +1,11 @@
 package com.example.mdl.api.controllers;
 
+import com.example.mdl.api.dto.MoradorDTO;
 import com.example.mdl.api.entities.*;
 import com.example.mdl.api.services.BlocoAptoService;
 import com.example.mdl.api.services.MoradorService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.util.Assert;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/v1/moradores")

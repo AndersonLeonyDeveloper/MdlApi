@@ -1,5 +1,6 @@
 package com.example.mdl.api.services;
 
+import com.example.mdl.api.dto.MoradorDTO;
 import com.example.mdl.api.entities.*;
 import com.example.mdl.api.repositories.MoradorRepository;
 import org.springframework.beans.factory.annotation.Autowired;
