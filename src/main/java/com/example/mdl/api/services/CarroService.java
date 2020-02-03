@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Service
 public class CarroService {
@@ -17,20 +18,14 @@ public class CarroService {
     @Autowired
     private CarroRepository rep;
 
-    public List<CarroDTO> getListOfCarrosByMoradorId(Long morador_id){
-        List<CarroDTO> carrosDTOlist = new ArrayList<>();
-
-        rep.findByMoradorId(morador_id).forEach(carro -> {
-            carrosDTOlist.add(new CarroDTO(carro));
-        });
-
-        return carrosDTOlist;
+    public List<CarroDTO> getListOfCarrosByMoradorId(Long morador_id) {
+        return rep.findByMoradorId(morador_id).stream().map(CarroDTO::create).collect(Collectors.toList());
     }
 
-    public Carro insertOrUpdate(CarroDTO carro, Morador morador){
+    public Carro insertOrUpdate(CarroDTO carro, Morador morador) {
         Optional<Carro> optional = getCarroByIdAndMoradorId(carro.getId(), morador.getId());
 
-        if(optional.isPresent()) {
+        if (optional.isPresent()) {
             Carro carroUpdate = optional.get();
 
             carroUpdate.setModelo(carro.getModelo());
@@ -73,7 +68,7 @@ public class CarroService {
         return rep.findByIdAndMoradorId(id, morador_id);
     }
 
-    public void deleteAllCars(){
+    public void deleteAllCars() {
         rep.deleteAll();
     }
 

@@ -2,6 +2,7 @@ package com.example.mdl.api.dto;
 
 import com.example.mdl.api.entities.Carro;
 import lombok.Data;
+import org.modelmapper.ModelMapper;
 
 @Data
 public class CarroDTO {
@@ -14,13 +15,8 @@ public class CarroDTO {
 
     private String cor;
 
-    public CarroDTO(Carro carro) {
-        this.id = carro.getId();
-        this.placa = carro.getPlaca();
-        this.modelo = carro.getModelo();
-        this.cor = carro.getCor();
-    }
-
-    public CarroDTO() {
+    public static CarroDTO create(Carro carro) {
+        ModelMapper modelMapper = new ModelMapper();
+        return modelMapper.map(carro, CarroDTO.class);
     }
 }

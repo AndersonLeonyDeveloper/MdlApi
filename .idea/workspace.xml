@@ -1,7 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bd99d7d9-9b96-43c5-9aa2-93948d4d16eb" name="Default Changelist" comment="" />
+    <list default="true" id="bd99d7d9-9b96-43c5-9aa2-93948d4d16eb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_modelmapper_modelmapper_2_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_2_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_2_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/mdl/api/dto/BlocoAptoDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/mdl/api/exception/ExceptionConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/mdl/api/exception/ObjectNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/mdl/api/security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mdl.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mdl.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mdl/api/controllers/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mdl/api/controllers/IndexController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mdl/api/controllers/MoradorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mdl/api/controllers/MoradorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mdl/api/dto/CarroDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mdl/api/dto/CarroDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mdl/api/dto/TelefoneDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mdl/api/dto/TelefoneDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mdl/api/repositories/BlocoAptoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mdl/api/repositories/BlocoAptoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mdl/api/services/BlocoAptoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mdl/api/services/BlocoAptoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mdl/api/services/CarroService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mdl/api/services/CarroService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mdl/api/services/MoradorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mdl/api/services/MoradorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mdl/api/services/TelefoneService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mdl/api/services/TelefoneService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/mdl/api/controllers/MoradorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/mdl/api/controllers/MoradorController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/mdl/api/entities/CarroDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/mdl/api/entities/MoradorDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/mdl/api/entities/TelefoneDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/mdl/api/services/BlocoAptoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/mdl/api/services/BlocoAptoService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/mdl/api/services/CarroService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/mdl/api/services/CarroService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/mdl/api/services/MoradorService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/mdl/api/services/MoradorService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/mdl/api/services/TelefoneService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/mdl/api/services/TelefoneService.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -145,102 +177,74 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="615" y="441" key="FileChooserDialogImpl/-1680.0.1680.1010/0.0.2560.1040@0.0.2560.1040" timestamp="1577451610527" />
-    <state width="1637" height="263" key="GridCell.Tab.0.bottom" timestamp="1580412900762">
-      <screen x="-1680" y="0" width="1680" height="1010" />
+    <state width="2517" height="246" key="GridCell.Tab.0.bottom" timestamp="1580734230702">
+      <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="1637" height="263" key="GridCell.Tab.0.bottom/-1680.0.1680.1010/0.0.2560.1040@-1680.0.1680.1010" timestamp="1580412900762" />
-    <state width="1637" height="263" key="GridCell.Tab.0.center" timestamp="1580412900762">
-      <screen x="-1680" y="0" width="1680" height="1010" />
+    <state width="1637" height="194" key="GridCell.Tab.0.bottom/-1680.0.1680.1010/0.0.2560.1040@-1680.0.1680.1010" timestamp="1580413343437" />
+    <state width="2517" height="246" key="GridCell.Tab.0.bottom/-1680.0.1680.1010/0.0.2560.1040@0.0.2560.1040" timestamp="1580734230702" />
+    <state width="2517" height="246" key="GridCell.Tab.0.center" timestamp="1580734230702">
+      <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="1637" height="263" key="GridCell.Tab.0.center/-1680.0.1680.1010/0.0.2560.1040@-1680.0.1680.1010" timestamp="1580412900762" />
-    <state width="1637" height="263" key="GridCell.Tab.0.left" timestamp="1580412900762">
-      <screen x="-1680" y="0" width="1680" height="1010" />
+    <state width="1637" height="194" key="GridCell.Tab.0.center/-1680.0.1680.1010/0.0.2560.1040@-1680.0.1680.1010" timestamp="1580413343437" />
+    <state width="2517" height="246" key="GridCell.Tab.0.center/-1680.0.1680.1010/0.0.2560.1040@0.0.2560.1040" timestamp="1580734230702" />
+    <state width="2517" height="246" key="GridCell.Tab.0.left" timestamp="1580734230702">
+      <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="1637" height="263" key="GridCell.Tab.0.left/-1680.0.1680.1010/0.0.2560.1040@-1680.0.1680.1010" timestamp="1580412900762" />
-    <state width="1637" height="263" key="GridCell.Tab.0.right" timestamp="1580412900762">
-      <screen x="-1680" y="0" width="1680" height="1010" />
+    <state width="1637" height="194" key="GridCell.Tab.0.left/-1680.0.1680.1010/0.0.2560.1040@-1680.0.1680.1010" timestamp="1580413343437" />
+    <state width="2517" height="246" key="GridCell.Tab.0.left/-1680.0.1680.1010/0.0.2560.1040@0.0.2560.1040" timestamp="1580734230702" />
+    <state width="2517" height="246" key="GridCell.Tab.0.right" timestamp="1580734230702">
+      <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state width="1637" height="263" key="GridCell.Tab.0.right/-1680.0.1680.1010/0.0.2560.1040@-1680.0.1680.1010" timestamp="1580412900762" />
-    <state width="1637" height="489" key="GridCell.Tab.1.bottom" timestamp="1577716388532">
-      <screen x="-1680" y="0" width="1680" height="1010" />
+    <state width="1637" height="194" key="GridCell.Tab.0.right/-1680.0.1680.1010/0.0.2560.1040@-1680.0.1680.1010" timestamp="1580413343437" />
+    <state width="2517" height="246" key="GridCell.Tab.0.right/-1680.0.1680.1010/0.0.2560.1040@0.0.2560.1040" timestamp="1580734230702" />
+    <state width="2517" height="48" key="GridCell.Tab.1.bottom" timestamp="1580500523333">
+      <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state width="1637" height="489" key="GridCell.Tab.1.bottom/-1680.0.1680.1010/0.0.2560.1040@-1680.0.1680.1010" timestamp="1577716388532" />
-    <state width="1637" height="489" key="GridCell.Tab.1.center" timestamp="1577716388531">
-      <screen x="-1680" y="0" width="1680" height="1010" />
+    <state width="2517" height="48" key="GridCell.Tab.1.bottom/-1680.0.1680.1010/0.0.2560.1040@0.0.2560.1040" timestamp="1580500523333" />
+    <state width="2517" height="48" key="GridCell.Tab.1.center" timestamp="1580500523333">
+      <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state width="1637" height="489" key="GridCell.Tab.1.center/-1680.0.1680.1010/0.0.2560.1040@-1680.0.1680.1010" timestamp="1577716388531" />
-    <state width="1637" height="489" key="GridCell.Tab.1.left" timestamp="1577716388531">
-      <screen x="-1680" y="0" width="1680" height="1010" />
+    <state width="2517" height="48" key="GridCell.Tab.1.center/-1680.0.1680.1010/0.0.2560.1040@0.0.2560.1040" timestamp="1580500523333" />
+    <state width="2517" height="48" key="GridCell.Tab.1.left" timestamp="1580500523333">
+      <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state width="1637" height="489" key="GridCell.Tab.1.left/-1680.0.1680.1010/0.0.2560.1040@-1680.0.1680.1010" timestamp="1577716388531" />
-    <state width="1637" height="489" key="GridCell.Tab.1.right" timestamp="1577716388532">
-      <screen x="-1680" y="0" width="1680" height="1010" />
+    <state width="2517" height="48" key="GridCell.Tab.1.left/-1680.0.1680.1010/0.0.2560.1040@0.0.2560.1040" timestamp="1580500523333" />
+    <state width="2517" height="48" key="GridCell.Tab.1.right" timestamp="1580500523333">
+      <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state width="1637" height="489" key="GridCell.Tab.1.right/-1680.0.1680.1010/0.0.2560.1040@-1680.0.1680.1010" timestamp="1577716388532" />
-    <state x="-1434" y="127" width="1254" height="883" key="SettingsEditor" timestamp="1577456028178">
-      <screen x="-1680" y="0" width="1680" height="1010" />
+    <state width="2517" height="48" key="GridCell.Tab.1.right/-1680.0.1680.1010/0.0.2560.1040@0.0.2560.1040" timestamp="1580500523333" />
+    <state x="336" y="330" width="1254" height="883" key="SettingsEditor" timestamp="1580500119181">
+      <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="-1434" y="127" width="1254" height="883" key="SettingsEditor/-1680.0.1680.1010/0.0.2560.1040@-1680.0.1680.1010" timestamp="1577456028178" />
-    <state x="336" y="330" width="998" height="710" key="SettingsEditor/-1680.0.1680.1010/0.0.2560.1040@0.0.2560.1040" timestamp="1577451880115" />
+    <state x="336" y="330" width="998" height="710" key="SettingsEditor/-1680.0.1680.1010/0.0.2560.1040@0.0.2560.1040" timestamp="1580500119181" />
     <state x="-1108" y="235" key="Vcs.Push.Dialog.v2" timestamp="1577736657909">
       <screen x="-1680" y="0" width="1680" height="1010" />
     </state>
     <state x="-1108" y="235" key="Vcs.Push.Dialog.v2/-1680.0.1680.1010/0.0.2560.1040@-1680.0.1680.1010" timestamp="1577736657909" />
     <state x="872" y="242" key="Vcs.Push.Dialog.v2/-1680.0.1680.1010/0.0.2560.1040@0.0.2560.1040" timestamp="1577452365943" />
-    <state x="-1036" y="335" key="com.intellij.ide.util.TipDialog" timestamp="1580406458142">
-      <screen x="-1680" y="0" width="1680" height="1010" />
+    <state x="981" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1580731492405">
+      <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="-1036" y="335" key="com.intellij.ide.util.TipDialog/-1680.0.1680.1010/0.0.2560.1040@-1680.0.1680.1010" timestamp="1580406458142" />
-    <state x="981" y="345" key="com.intellij.ide.util.TipDialog/-1680.0.1680.1010/0.0.2560.1040@0.0.2560.1040" timestamp="1577372318358" />
+    <state x="-1036" y="335" key="com.intellij.ide.util.TipDialog/-1680.0.1680.1010/0.0.2560.1040@-1680.0.1680.1010" timestamp="1580469297586" />
+    <state x="981" y="345" key="com.intellij.ide.util.TipDialog/-1680.0.1680.1010/0.0.2560.1040@0.0.2560.1040" timestamp="1580731492405" />
+    <state x="1089" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580496207384">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="1089" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1680.0.1680.1010/0.0.2560.1040@0.0.2560.1040" timestamp="1580496207384" />
     <state x="-1144" y="103" width="737" height="804" key="find.popup" timestamp="1577459954619">
       <screen x="-1680" y="0" width="1680" height="1010" />
     </state>
     <state x="-1144" y="103" width="737" height="804" key="find.popup/-1680.0.1680.1010/0.0.2560.1040@-1680.0.1680.1010" timestamp="1577459954619" />
-    <state x="-1177" y="217" width="672" height="678" key="search.everywhere.popup" timestamp="1577374012629">
-      <screen x="-1680" y="0" width="1680" height="1010" />
+    <state x="766" y="223" width="1024" height="699" key="search.everywhere.popup" timestamp="1580732482407">
+      <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="-1177" y="217" width="672" height="678" key="search.everywhere.popup/-1680.0.1680.1010/0.0.2560.1040@-1680.0.1680.1010" timestamp="1577374012629" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/mdl/api/controllers/MoradorController.java</url>
-          <line>47</line>
-          <option name="timeStamp" value="42" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/mdl/api/controllers/MoradorController.java</url>
-          <line>29</line>
-          <option name="timeStamp" value="43" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/mdl/api/services/MoradorService.java</url>
-          <line>76</line>
-          <option name="timeStamp" value="54" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/mdl/api/services/MoradorService.java</url>
-          <line>79</line>
-          <option name="timeStamp" value="55" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/mdl/api/services/MoradorService.java</url>
-          <line>80</line>
-          <option name="timeStamp" value="56" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/mdl/api/services/MoradorService.java</url>
-          <line>84</line>
-          <option name="timeStamp" value="57" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/mdl/api/services/MoradorService.java</url>
-          <line>89</line>
-          <option name="timeStamp" value="75" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="766" y="223" width="1024" height="699" key="search.everywhere.popup/-1680.0.1680.1010/0.0.2560.1040@0.0.2560.1040" timestamp="1580732482407" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/mdl$MdlApplication.ic" NAME="MdlApplication Coverage Results" MODIFIED="1577463121266" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

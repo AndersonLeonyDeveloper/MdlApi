@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Service
 public class TelefoneService {
@@ -17,14 +18,7 @@ public class TelefoneService {
     private TelefoneRepository rep;
 
     public List<TelefoneDTO> getListOfTelefonesByMoradorId(Long moradorId){
-
-        List<TelefoneDTO> telefonesDTOlist = new ArrayList<>();
-
-        rep.findByMoradorId(moradorId).forEach(telefone -> {
-            telefonesDTOlist.add(new TelefoneDTO(telefone));
-        });
-
-        return telefonesDTOlist;
+        return rep.findByMoradorId(moradorId).stream().map(TelefoneDTO::create).collect(Collectors.toList());
     }
 
     public Telefone insertOrUpdate(TelefoneDTO telefone, Morador morador){
@@ -53,11 +47,6 @@ public class TelefoneService {
         });
         rep.deleteAll();
         rep.saveAll(telefonesListUpdate);
-
-//        telefones.forEach(telefone -> {
-////            insert(telefone, morador);
-//            insertOrUpdate(telefone, morador);
-//        });
     }
 
     public Optional<Telefone> getTelefoneById(Long id) {
@@ -70,11 +59,6 @@ public class TelefoneService {
 
     public void updateList(List<TelefoneDTO> telefones, Morador morador) {
         telefones.forEach(telefone -> {
-//            if(telefone.getId()!=null) {
-//                update(telefone, morador);
-//            } else {
-//                insert(telefone, morador);
-//            }
             insertOrUpdate(telefone, morador);
         });
     }
